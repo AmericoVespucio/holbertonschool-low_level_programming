@@ -1,8 +1,11 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main
  *
- * Return: Always 0 (Success)
+ * Return: Always 0
+ * 
+ * Esteban Aguiar
+ *
  */
 int main(void)
 {
