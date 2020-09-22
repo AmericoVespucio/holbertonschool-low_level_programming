@@ -1,21 +1,18 @@
 #include "holberton.h"
 
-/*
+/**
+ * main - void
  *
- * Alphabet 
- *
- *
+ * Return: Always 0 (Success)
  */
 
-int main(void)
+void print_alphabet(void)
 {
-void print_alphabet(void);
+int a;
+for (a = 'a'; a <= 'z'; a++)
 {
-	int a;
-	for(a = 'a'; a <= 'z'; a++)
-		_putchar(a);
-
+_putchar(a);
 }
-_putchar('\n');
+_putchar ('\n');
 return (0);
 }
