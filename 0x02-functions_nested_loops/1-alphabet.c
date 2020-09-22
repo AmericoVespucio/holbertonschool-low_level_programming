@@ -1,9 +1,11 @@
 #include "holberton.h"
 
 /**
- * main - void
+ * print_alphabet - writes the character c to stdout
  *
- * Return: Always 0 (Success)
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 
 void print_alphabet(void)
@@ -14,5 +16,4 @@ for (a = 'a'; a <= 'z'; a++)
 _putchar(a);
 }
 _putchar ('\n');
-return (0);
 }
