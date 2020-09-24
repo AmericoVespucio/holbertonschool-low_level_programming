@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
- * print_diagonal - Entry point
- * @n : int
+ * print_square - Entry point
+ * @size: int
  * Return: void (Success)
  */
-void print_diagonal(int n)
+void print_square(int size)
 {
 	int a, b;
 
@@ -12,11 +12,10 @@ void print_diagonal(int n)
 	{
 		for (a = 0; a < size; a++)
 		{
-			for (b = 0; b < a; b++)
+			for (b = 0; b < size; b++)
 			{
-				_putchar(' ');
+				_putchar('#');
 			}
-			_putchar('#');
 			_putchar('\n');
 		}
 	}
