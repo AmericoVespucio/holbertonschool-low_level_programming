@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * _isupper - check the code for Holberton School students.
+ * _isdigit - check the code for Holberton School students.
  * @c : feliz cumple roberto y javier
  * Return: Always 0.
  */
-int _isupper(int c)
+int _isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 	{
