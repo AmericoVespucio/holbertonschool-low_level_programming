@@ -10,15 +10,15 @@
 void print_triangle(int size)
 {
 
-	int abc, def, ghi;
+	int a, b, c;
 
 	if (size <= 0)
 		_putchar('\n');
-	for (abc = 0; abc < size; abc++)
+	for (a = 0; a < size; a++)
 	{
-		for (def = size - abc; def > 1; def--)
+		for (b = size - a; b > 1; b--)
 			_putchar(' ');
-		for (ghi = abc + def; ghi >= 1; ghi--)
+		for (c = a + b; c >= 1; c--)
 			_putchar('#');
 		_putchar('\n');
 	}
