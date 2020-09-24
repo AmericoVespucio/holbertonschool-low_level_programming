@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_numbers - check the code for Holberton School students.
+ * print_most_numbers - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
