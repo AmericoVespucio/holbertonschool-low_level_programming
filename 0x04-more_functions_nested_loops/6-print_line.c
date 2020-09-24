@@ -1,11 +1,10 @@
 #include "holberton.h"
 
 /**
- * print_line - check the code for Holberton School students.
- * @n: line
+ * print_line - Entry point.
+ * @n : int
  * Return: Always 0.
  */
-
 void print_line(int n)
 {
 	int a;
@@ -16,6 +15,6 @@ void print_line(int n)
 		{
 			_putchar('_');
 		}
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
