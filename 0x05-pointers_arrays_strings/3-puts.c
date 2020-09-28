@@ -2,7 +2,7 @@
 
 /**
  * _puts - check the code for Holberton School students.
- *
+ * @str: string
  * Return: Always 0.
  */
 
