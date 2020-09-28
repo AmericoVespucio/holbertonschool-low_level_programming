@@ -9,8 +9,12 @@
 void _puts(char *str)
 {
 
+	int cuenta;
 
-
-
+	for (cuenta = 0; str[cuenta] != '\0'; cuenta++)
+	{
+		_putchar(str[cuenta]);
+	}
+	_putchar('\n');
 
 }
