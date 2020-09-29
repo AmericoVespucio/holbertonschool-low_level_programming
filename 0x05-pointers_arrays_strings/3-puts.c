@@ -1,20 +1,22 @@
 #include "holberton.h"
 
 /**
- * _puts - check the code for Holberton School students.
- * @str: string
- * Return: Always 0.
+ *_puts - prints a string followed by a new line to stdout
+ *@str: the tring to be output
  */
-
 void _puts(char *str)
 {
+	int length;
+	int i;
 
-	int cuenta;
-
-	for (cuenta = 0; str[cuenta] != '\0'; cuenta++)
+	while (str[length] != '\0')
 	{
-		_putchar(str[cuenta]);
+		length++;
 	}
-	_putchar('\n');
 
+	length = length - 1;
+
+	for (i = 0; i <= length; i++)
+		_putchar(str[i]);
+	_putchar('\n');
 }
