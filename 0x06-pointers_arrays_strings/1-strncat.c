@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strcat - check the code for Holberton School students.
+ * _strncat - check the code for Holberton School students.
  * @dest: destination
  * @src: source
  * @n: int
