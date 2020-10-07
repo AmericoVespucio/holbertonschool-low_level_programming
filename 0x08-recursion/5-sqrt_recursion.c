@@ -18,7 +18,7 @@ int recursion(int n, int div)
 		div++;
 		return (recursion(n, div));
 	}
-	return (div);
+	return (di);
 }
 
 /**
