@@ -1,8 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ *main - program that adds positive numbers.
+ *@argc: number of arguments passed for the sum
+ *@argv: array of pointer to the arguments
+ *
+ *Return: 0 success, 1 error.
+ */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int i, j, sum = 0;
 
@@ -12,7 +19,7 @@ int main(int argc, char* argv[])
 	}
 	else
 	{
-		for ( i = 1; i < argc; i++)
+		for (i = 1; i < argc; i++)
 		{
 			for (j = 0; *(argv[i] + j) != '\0'; j++)
 			{
