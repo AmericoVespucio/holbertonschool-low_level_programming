@@ -1,22 +1,17 @@
 #include <stdio.h>
 
 /**
- *main - taking in the input that you would normally use to execute the file
- *and return that as an output
- *@argc: Variable that accounts for the length of the input
- *@argv: Variable that accounts for the length of the input as an array
- *Return: The value returns 0
+ *main - prints the name of the program
+ *@argc: counts the arguments supplied to the program
+ *@argv: arrays of pointers to the string that are supplied to the program
+ *
+ *Return: 0 success
  */
 
 int main(int argc, char *argv[])
 {
-	if (argc > 0)
-
-	{
-
+	(void)argc;
 	printf("%s\n", argv[0]);
-
-	}
 
 	return (0);
 }
