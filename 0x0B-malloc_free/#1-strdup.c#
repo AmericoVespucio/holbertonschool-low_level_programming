@@ -13,10 +13,10 @@ char *_strdup(char *str)
 	int i;
 	int size = 0;
 
-        if (str == NULL)
-        {
-                return (NULL);
-        }
+	23        if (str == NULL)
+		24        {
+			25                return (NULL);
+			26        }
 
 	for (i = 0; str[i] != 0; i++)
 	{
