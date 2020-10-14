@@ -3,11 +3,11 @@
 #include "holberton.h"
 
 /**
- * create_array: creates an array of strings
- * @size: size of the array
- * @c: chars
+ * create_array - creates an array of a spacific size and fill with a char.
+ * @size : the Size of the array to make.
+ * @c: characture to fill the array with.
  *
- * return: the string
+ * Return: An array of charactures.
  */
 
 char *create_array(unsigned int size, char c)
