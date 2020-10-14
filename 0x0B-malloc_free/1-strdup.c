@@ -1,31 +1,38 @@
 #include "holberton.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * _strdup - man strdup
- * @str: string
- *
- * return: If bigger than size (i) : NULL, if its NULL : NULL
+ * _strdup - duplicate string
+ * @str: pointer to str
+ *Return: return pointer to malloc
  */
 
 char *_strdup(char *str)
 {
-	char *new_str;
+	char *s;
 	int i;
+	int size = 0;
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; str[i] != 0; i++)
 	{
-		new_str = (char *)malloc(i * sizeof(char));
-		new_str[i] = str[i];
-		if (*str > i)
-		{
-			return(NULL);
-		}
-		if (str == NULL)
-	        {
-			return(NULL);
-	        }
-        }
-	return(0);
+		size++;
+	}
+
+	s = malloc(size * sizeof(char) + 1);
+
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	if (s == NULL)
+	{
+		return (NULL);
+	}
+
+	for (i = 0; i < size; i++)
+	{
+		s[i] = str[i];
+	}
+
+	return (s);
 }
