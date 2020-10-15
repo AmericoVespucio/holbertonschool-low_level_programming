@@ -27,11 +27,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (j = 0; s2[j] != '\0' && j < n; j++)
 	{
 	}
-/* If n is greater or equal to the length of s2 then use the entire string s2 */
+/* If n is greater or equal to the length */
+/* of s2 then use the entire string s2 */
 
 
 	s = malloc(sizeof(char) * (i + j) + 1);
-/* Asignation of malloc, of char (1 byte) * position of i + j + 1 (to include NULL) */
+/* Asignation of malloc, of char (1 byte) * position of i + j + 1 */
+/* (to include NULL) */
 	if (s == NULL)
 		return (NULL);
 	/* If the function fails, it should return NULL */
@@ -45,8 +47,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s[x + y] = s2[y];
 	}
 /* Concatenates the last 2 strings in pointer string s */
-	
-	s[x + y] = '\0'; 
+
+	s[x + y] = '\0';
 /* to add null zero at the end manually */
 	return (s);
 }

@@ -28,5 +28,5 @@ void *malloc_checked(unsigned int b)
 /** Si a se pasa de memoria, o entra null, */
 /* terminar el programa con status 98 */
 	return (a);
-/** retorna el puntero de a */
+/* retorna la direccion del pointer de a */
 }
