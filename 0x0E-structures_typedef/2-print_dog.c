@@ -20,7 +20,13 @@ void print_dog(struct dog *d)
 	else /* If name is not NULL, print name value */
 	{
 		printf("Name: %s\n", d->name);
-	/* Also print age, since doesnt have any conditions to print it */
+	}
+	if (d->age == '0') /* If an element of d is NULL */
+	{
+		printf("Age: (nil)\n");
+	}
+	else
+	{
 		printf("Age: %f\n", d->age);
 	}
 	if (d->owner == NULL) /* If an element of d is NULL */
