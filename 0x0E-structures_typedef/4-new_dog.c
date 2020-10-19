@@ -91,10 +91,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		free(new_name);
 		free(new_dog);
+		free(new_owner);
 		return (NULL);
 	}
 /* If new_owner value is NULL, we free all the */
-/* memory from the function and new_name */
+/* memory from the function (new_dog) , new_name, and new_owner */
 	new_dog->name = new_name;
 	new_dog->age = age;
 	new_dog->owner = new_owner;
