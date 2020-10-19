@@ -9,14 +9,15 @@
  */
 
 int _strlen(char *s)
-	{
-		int i;
+{
 
-		for (i = 0; s[i] != '\0'; i++)
-		{
-		}
-		return (i);
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
 	}
+	return (i);
+}
 
 /**
  * _strdup - Duplicate a string
@@ -58,35 +59,46 @@ char *_strdup(char *str)
  * Return: struct.
  * Description: Longer description
  */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
 	char *new_name, *new_owner;
 
 	if (name == NULL || owner == NULL)
+/* Return NULL if the function fails */
 	{
 		return (NULL);
 	}
 	new_dog = malloc(sizeof(struct dog));
+/* We allocate the needed dynamic memory of the dog structure */
 	if (new_dog == NULL)
 	{
 		return (NULL);
 	}
+/* Return NULL if the function fails */
 	new_name = _strdup(name);
+/* We asign the value of name, to the new pointer-variable new_name */
 	if (new_name == NULL)
 	{
 		free(new_dog);
 		return (NULL);
 	}
+/* Return NULL if the function fails,in case new_name is NULL,we free memory */
 	new_owner = _strdup(owner);
+/* We asign the value of owner, to the new pointer-variable new_owner */
 	if (new_owner == NULL)
 	{
 		free(new_name);
 		free(new_dog);
 		return (NULL);
 	}
+/* If new_owner value is NULL, we free all the */
+/* memory from the function and new_name */
 	new_dog->name = new_name;
 	new_dog->age = age;
 	new_dog->owner = new_owner;
+/* We now asign the value of the struct pointers to the value of our */
+/* new string values */
 	return (new_dog);
 }
