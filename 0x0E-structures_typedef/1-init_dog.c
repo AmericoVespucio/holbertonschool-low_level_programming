@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdio.h>
 
 /**
  * init_dog - cointain initializing pointers to the struct
@@ -13,12 +14,10 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (d != NULL) /* If d is not NULL */
-	{ /* We derreference d pointer to name             */
-	  /* and we asign the value of name to the pointer */
+	if (d != NULL)
+	{
 		d->name = name;
 		d->age = age;
 		d->owner = owner;
-/* We also do it with age and owner */
 	}
 }
