@@ -7,8 +7,8 @@
  * @s: String, while i will take the value of the last string position
  * Return: The lenght of the string
  */
- 
- 	int _strlen(char *s)
+
+int _strlen(char *s)
 	{
 		int i;
 
