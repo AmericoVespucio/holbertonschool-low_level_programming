@@ -14,8 +14,12 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	d = &dog;
-	d->name;
-	d->age;
-	d->owner;
+	if (d != NULL) /* If d is not NULL */
+	{ /* We derreference d pointer to name             */
+	  /* and we asign the value of name to the pointer */
+		d->name = name;
+		d->age = age;
+		d->owner = owner;
+/* We also do it with age and owner */
+	}
 }
