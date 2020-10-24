@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - function num one by one all arguments.
+ * print_strings - print strings
  * @n: n arguments
  * @separator: characters as separator
  *
@@ -22,7 +22,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(args, n);
 	for (i = 0; i < n; i++)
 	{
-		str = va_arg(args,char *);
+		str = va_arg(args, char *);
 		if (str != '\0')
 		{
 			printf("%s", str);
@@ -33,5 +33,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 	}
 	va_end(args);
-        putchar('\n');
+	putchar('\n');
 }
