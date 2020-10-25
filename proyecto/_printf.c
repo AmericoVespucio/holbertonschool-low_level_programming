@@ -72,7 +72,7 @@ int _printf(const char *format, ...)
 		{
 			j = 0;
 			i++;
-			while (j < 2)
+			while (j < 4)
 			{
 				if (type[j].c[0] == format[i])
 				{
