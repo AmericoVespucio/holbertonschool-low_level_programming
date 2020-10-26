@@ -1,44 +1,38 @@
 #include "holberton.h"
 /**
- * p_d - Print integers when incoked
- *@list: argument entered to print
+ * int_print - Print integers when incoked
+ * @args: argument entered to print
  * Return: amount of integers printed
  */
-int print_integer(va_list list)
+int int_print(va_list args)
 {
-	int n = va_arg(list, int);
-	int num, last = n % 10, digit, exp = 1;
-	int  i = 1;
 
-	n = n / 10;
-	num = n;
+	long int num, div, i = 0;
 
-	if (last < 0)
+	num = va_arg(args, int);
+
+	if (num == 0)
+	{
+		_putchar('0');
+		i = 1;
+	}
+	else if (num < 0)
 	{
 		_putchar('-');
 		num = -num;
-		n = -n;
-		last = -last;
-		i++;
+		i = 1;
 	}
 	if (num > 0)
 	{
-		while (num / 10 != 0)
+		for (div = 1; div <= num; div *= 10)
+			;
+		while (div > 1)
 		{
-			exp = exp * 10;
-			num = num / 10;
-		}
-		num = n;
-		while (exp > 0)
-		{
-			digit = num / exp;
-			print_char(digit + '0');
-			num = num - (digit * exp);
-			exp = exp / 10;
+			div /= 10;
+			_putchar((num / div) + '0');
+			num %= div;
 			i++;
 		}
 	}
-	print_char(last + '0');
-
 	return (i);
 }
