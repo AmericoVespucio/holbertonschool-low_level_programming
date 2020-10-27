@@ -63,7 +63,7 @@ int print_string(va_list list)
  *
  * Return: Nothing
  */
-int int_print(va_list list)
+int print_int(va_list list)
 {
 
 	long int num, div, i = 0;

@@ -12,7 +12,8 @@ int _printf(const char *format, ...)
 	pa type[] = {
 		{"c", print_char}, {"s", print_string},
 		{"i", print_int}, {"d", print_int},
-		{"%", print_percent}, {NULL, NULL}
+		{"u", print_uint},{"%", print_percent},
+		{NULL, NULL}
 	};
 	int i, j, c, numchar = 0;
 	va_list list;
