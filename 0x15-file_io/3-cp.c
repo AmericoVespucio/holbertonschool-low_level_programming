@@ -71,3 +71,20 @@ int main(int argc, char **argv)
 		close(file_from);
 		print_error_write(argv[2]);
 	}
+	while (readvalue == 1024)
+	{
+		readvalue = read(file_from, buff, 1024);
+		if (readvalue < 0)
+			print_error_read(argv[1]);
+		retvalue = write(file_to, buff, readvalue);
+		if (retvalue < readvalue)
+			print_error_write(argv[2]);
+	}
+	closevalue = close(file_from);
+	if (closevalue < 0)
+		print_error_close(argv[1]);
+	closevalue = close(file_to);
+	if (closevalue < 0)
+		print_error_close(argv[2]);
+	return (0);
+}
